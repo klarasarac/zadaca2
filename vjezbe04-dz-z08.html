@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Varijable</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function filtrirajStringove(arr) {
+  let novoPolje = arr.filter(function(item) {
+    return item.toUpperCase() === item || item.length >= 5;
+  });
+
+  return novoPolje;
+}
+
+var arr = ['Ovo', 'je', 'My', 'prvi', 'komad', 'OF', 'JAVASCRIPT', 'koda', 'Koji', 'je', 'proradio'];
+
+var filtrirano = filtrirajStringove(arr);
+console.log(filtrirano);
+
+ </script>
+</body>
+</html>

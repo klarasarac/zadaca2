@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Varijable</title>
+</head>
+<body>
+    <script type="text/javascript">
+      function pronadjiSavrseneBrojeve(n) {
+  for (let broj = 1; broj <= n; broj++) {
+    let sumaDjelitelja = 0;
+
+    for (let djelitelj = 1; djelitelj < broj; djelitelj++) {
+      if (broj % djelitelj === 0) {
+        sumaDjelitelja += djelitelj;
+      }
+    }
+
+    if (sumaDjelitelja === broj) {
+      console.log(broj + ' je savršen broj.');
+    }
+  }
+}
+
+pronadjiSavrseneBrojeve(100);
+
+ </script>
+</body>
+</html>

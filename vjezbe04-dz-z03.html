@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Varijable</title>
+</head>
+<body>
+    <script type="text/javascript">
+       function isProsti(broj) {
+      for (var i = 2; i < broj; i++) {
+        if (broj % i === 0) {
+          return false;
+        }
+      }
+      return broj !== 1;
+    }
+
+    for (var j = 1; j <= 1000; j++) {
+      if (isProsti(j)) {
+        document.write(j + "<br>");
+        console.log(j);
+      }
+    }
+
+ </script>
+</body>
+</html>
